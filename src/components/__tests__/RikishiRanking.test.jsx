@@ -8,8 +8,7 @@ beforeEach(() => {
 
 describe('RikishiRanking component', () => {
     it('should render the rikishi component with heading', () => {
-        expect(screen.getByRole('heading')).toBeInTheDocument();
-        expect(screen.getByText('Rikishi Ranking')).toBeInTheDocument()
+        expect(screen.getByRole('heading', {name: 'Rikishi Ranking'})).toBeInTheDocument();
     });
     it('should render the rikishi component with a list with list items', () => {
         const list = screen.getByRole('list')
